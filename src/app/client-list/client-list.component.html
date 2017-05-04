@@ -1,0 +1,29 @@
+<div class="list-clients">
+<div class="page-header">
+  <h1>Список клієнтів</h1>
+</div>
+<p class="total-tables"> {{clientCounter()}} клієнтів</p>
+</div>
+<div class="panel panel-default ">
+  <div class="panel-heading">Список клієнтів</div>
+  <table class="table "   >
+    <thead>
+    <tr>
+      <th>Імя клієнта</th>
+      <th>Стіл</th>
+      <th>Кількість зайнятих місць</th>
+      <th>Рахунок</th>
+    </tr>
+    </thead>
+    <tbody  *ngFor="let client of clients" >
+    <tr >
+      <td>{{client.name}}</td>
+      <td>{{client.tableName}}</td>
+      <td>{{client.orderedSeats}}</td>
+      <td>{{client.totalCheck}}</td>
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+

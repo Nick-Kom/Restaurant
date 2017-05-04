@@ -1,0 +1,10 @@
+.edit {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.del {
+  display: none;
+}

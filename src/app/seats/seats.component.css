@@ -1,0 +1,12 @@
+
+.client-count {
+  margin: auto;
+  overflow: hidden;
+  padding: 10px;
+  width: 400px;
+}
+
+.count {
+  text-align: center;
+  font-size: 26px;
+}

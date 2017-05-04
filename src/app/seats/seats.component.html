@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="client-count">
+    <div class="col-sm-5">
+      <button class="btn btn-primary " (click)="downQuantity(table)">Звільнити місце</button>
+
+    </div>
+
+
+    <div class="col-sm-3">
+      <p class="count">{{table.curClients}} із {{table.maxSeats}}</p>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary " (click)="upQuantity(table)">Зайняти місце</button>
+    </div>
+  </div>
+</div>

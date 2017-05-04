@@ -1,0 +1,11 @@
+.table-stripedd{
+  background-color: aliceblue;
+}
+.panel,.list-clients{
+  margin: auto;
+  width: 700px;
+
+}
+.list-clients{
+  text-align: center;
+}

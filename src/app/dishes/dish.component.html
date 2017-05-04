@@ -1,0 +1,22 @@
+
+<div class="panel-group" >
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a >Виберіть страву:</a>
+      </h4>
+    </div>
+    <div  class="panel" >
+      <div class="panel-body" *ngFor="let dish of dishes">
+        <div class="col-sm-6">
+          {{dish.dishName}}
+        </div>
+        <div class="col-sm-4"><span class="label label-warning">{{dish.price | currency:"EUR":true}}</span>
+        </div>
+        <div >
+        <button class="btn btn-info "   (click)="addDishes(table,dish) ">Додати</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

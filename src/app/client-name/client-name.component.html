@@ -1,0 +1,24 @@
+
+<div class="row" *ngIf="table.clientName!==''"  >
+  <div class="col-sm-11"><h2> {{table.clientName}}</h2></div>
+  <div>
+    <button type="button" class="btn btn-info"  (click)="edit(table)">
+      <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+    </button>
+  </div>
+
+</div>
+<form *ngIf="table.clientName==''" (ngSubmit)="addClientName(table,newClient); todoForm.reset() " #todoForm="ngForm" >
+  <div class="form-group">
+    <div class="row">
+      <div class="col-sm-10">
+        <input class="form-control" type="text" name="title"  [(ngModel)]="newClient"
+               placeholder="Введіть ім'я клієнта" required>
+      </div>
+      <div class="col-sm-2">
+        <button class="btn btn-info" type="submit" [disabled]="todoForm.form.invalid">Додати</button>
+      </div>
+    </div>
+  </div>
+</form>
+

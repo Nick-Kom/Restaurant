@@ -1,0 +1,36 @@
+h2 {
+  margin-top: 2px;
+}
+
+.total-check {
+  font-size: 22px;
+}
+
+
+.tables {
+  margin: auto;
+  width: 700px;
+
+}
+
+
+h1, .total-tables,.heading {
+  text-align: center;
+}
+.glyphicon{
+  width: 600px;
+  margin: auto;
+}
+
+.total-tables {
+  font-size: 18px;
+}
+
+.price {
+  font-size: 20px;
+}
+
+
+
+
+
